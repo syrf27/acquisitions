@@ -1,0 +1,50 @@
+{
+  "name": "acquisitions",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "imports": {
+    "#config/*": "./src/config/*",
+    "#logger/*": "./src/logger/*",
+    "#models/*": "./src/models/*",
+    "#controllers/*": "./src/controllers/*",
+    "#drizzle": "./drizzle/index.js"
+  },
+  "scripts": {
+    "dev": "node --watch src/index.js",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate",
+    "db:studio": "drizzle-kit studio"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/syrf27/acquisitions.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/syrf27/acquisitions/issues"
+  },
+  "homepage": "https://github.com/syrf27/acquisitions#readme",
+  "dependencies": {
+    "@neondatabase/serverless": "^1.1.0",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "drizzle-orm": "^0.45.2",
+    "express": "^5.2.1",
+    "helmet": "^8.2.0",
+    "morgan": "^1.11.0",
+    "winston": "^3.19.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "drizzle-kit": "^0.31.10",
+    "eslint": "^10.6.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.6",
+    "prettier": "^3.9.4"
+  }
+}

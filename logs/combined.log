@@ -1,0 +1,2 @@
+{"level":"info","message":"Received request for / endpoint","service":"acquisitons-api","timestamp":"2026-07-05T12:44:55.006Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [05/Jul/2026:12:44:55 +0000] \"GET / HTTP/1.1\" 200 13 \"-\" \"Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0\"","service":"acquisitons-api","timestamp":"2026-07-05T12:44:55.023Z"}
